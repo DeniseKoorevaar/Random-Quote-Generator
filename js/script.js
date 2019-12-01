@@ -38,6 +38,8 @@ const quotes = [
 const getRandomQuote = quotes.map(quote => `${quote.quote}` + ' - ' + `${quote.source}` );
 console.table(getRandomQuote); //Looping through each quote and logging it.
 
+console.log(Math.floor(Math.random() * (quotes.length)));
+
 /***
  * `getRandomQuote` function
 ***/
